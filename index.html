@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Jogo de Associação</title>
+</head>
+<body>
+    <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="column" id="column1">
+            <h2>Desenhos</h2>
+            <div class="box1"  draggable="true" ondragstart="drag(event)" data-animal="🐶">🐶</div>
+            <div class="box2"  draggable="true" ondragstart="drag(event)" data-animal="🐱">🐱</div>
+            <div class="box3"  draggable="true" ondragstart="drag(event)" data-animal="🐻">🐻</div>
+            <div class="box4"  draggable="true" ondragstart="drag(event)" data-animal="🐰">🐰</div>
+            <div class="box5"  draggable="true" ondragstart="drag(event)" data-animal="🦁">🦁</div>
+            <div class="box6"  draggable="true" ondragstart="drag(event)" data-animal="🐦">🐦</div>
+        </div>
+        <div class="column" id="column2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Nomes Desordenados</h2>
+            <div class="box6" data-animal="🐦">🐦</div>
+            <div class="box1" data-animal="🐶">🐶</div>
+            <div class="box4" data-animal="🐰">🐰</div>
+            <div class="box3" data-animal="🐻">🐻</div>
+            <div class="box2" data-animal="🐱">🐱</div>
+            <div class="box5" data-animal="🦁">🦁</div>
+        </div>
+    </div>
+</body>
+</html>
